@@ -1,19 +1,25 @@
 ---
 layout: page
-title: Airspace
+title: Perfsec
 permalink: /
 ---
 
 <!-- Slider Start -->
-<section id="slider">
+<section id="intro">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-2">
+      <div class="col-md-6 col-md-offset-0">
         <div class="block">
-          <h1 class="animated fadeInUp">A DIGITAL MARKETING &#38; <br> DESIGN AGENCY</h1>
-          <p class="animated fadeInUp">We love the Web and the work we do. We work closely with our clients to deliver the best possible solutions for their needs</p>
+          <h1 class="animated fadeInUp">Secure your Python Package supply chain</h1>
+          <p class="animated fadeInUp">While developing and running Python workloads from the Python Package Index is very simple, security minded organizations need further assurances to comply with EU and US cybersecurity regulations. Access secure, provenance-verified Python packages without giving up on simplicity!</p>
         </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-Wy2PQNq2_HulgRHYkSGcFzZuH3F3rYJBab8quCmp0ZIZcg/viewform?usp=sf_link" class="btn btn-cta">Join our beta!</a>
       </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="img/main-img.jpg" alt="Img">
+        </div>
+      </div><!-- .col-md-5 close -->
     </div>
   </div>
 </section>
@@ -21,165 +27,118 @@ permalink: /
 <section id="intro">
   <div class="container">
     <div class="row">
-      <div class="col-md-7 col-sm-12">
+      <div class="col-md-4 col-sm-4">
         <div class="block">
           <div class="section-title">
-            <h2>About Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            <h2>Protect your infrastructure from malware threats</h2>
+            <p>The Python Package Index (PyPI), is a vital repository for myriad Python software projects. Due to its popularity it has been weaponized by malicious actors deploying malware through typosquatting—subtly misspelling package names to trap unwary developers into incorporating hazardous code. This tactic can devastate your organizational security exposing the organization to unprecedented risk.</p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
+          <p>Harden the security of your development teams, ensuring that only expert-vetted and digitally signed packages are interwoven into your codebase. We prioritize your software’s sanctity by granting your teams access solely to software meticulously shielded from known malware, protecting your organization’s data and operations.</p>
         </div>
-      </div><!-- .col-md-7 close -->
+      </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="block">
+          <div class="section-title">
+            <h2>Comply with cybersecurity regulations</h2>
+            <p>The recently instituted EU Cyber Resilience Act and the redefined US cybersecurity strategy have sculpted a new paradigm, placing product vendors under scrutinizing focus and holding them accountable for cybersecurity incidents. Software vendors, particularly those navigating the critical product landscape, are mandated to uphold rigorous secure processes, ensuring the software remains free of known vulnerabilities and exercising due diligence in integrating third-party software.</p>
+          </div>
+          <p>With perfsec you maintain unwavering compliance with stringent international cybersecurity regulations and established security benchmarks. Access secure and validated Python software delivery complying with your requirements and ensuring your product excels in conformity assessments like CE.</p>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="block">
+          <div class="section-title">
+            <h2>Automate SBOM Generation</h2>
+            <p>Providing a Software Bill of Materials (SBOM) has become a non-negotiable standard in software delivery, offering a transparent lens through which end users can identify and navigate potential vulnerabilities, especially during critical cybersecurity crises like the notorious log4j incident. The SBOM not only signifies a commitment to transparency but also fortifies your user's trust, allowing them to identify and mitigate vulnerable components swiftly and effectively during pressing situations, thereby safeguarding their operations and maintaining the integrity of their digital assets.</p>
+          </div>
+          <p>With our Wyse Companion Tool, you effortlessly generate SBOMs and proactively manage vulnerabilities within your software dependencies. Navigate through the complex terrains of software delivery with a guardian that not only automates boring time-consuming tasks, but identifies vulnerable software early prior to shipping to customers.</p>
+        </div>
+      </div>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-Wy2PQNq2_HulgRHYkSGcFzZuH3F3rYJBab8quCmp0ZIZcg/viewform?usp=sf_link" class="btn btn-cta">Join our beta!</a>
+  </div>
+</section>
+
+<section id="nlist">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Install and use perfsec in 3 easy steps</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <div class="list-item">
+          <h3>1. Get your token</h3>
+        </div>
+      </div>
+      <div class="col-sm-7 col-md-7">
+        <div class="list-text">
+          <p>You first need a token for your instances to use perfsec. Visit perfsec.ai and get to the Token Management page. Click refresh and copy the text from the token field.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <div class="list-item">
+          <h3>2. Set the Python package provider</h3>
+        </div>
+      </div>
+      <div class="col-sm-7 col-md-7">
+        <div class="list-text">
+          <p>Type the following command into the terminal.</p>
+          <pre>pip config set --site global.index-url https://&lt;token&gt;@index-staging.perfsec.ai/simple/</pre>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-3 col-md-3">
+        <div class="list-item">
+          <h3>3. Install the wyse tooling or any other package</h3>
+        </div>
+      </div>
+      <div class="col-sm-7 col-md-7">
+        <div class="list-text">
+          <p>Type the following commands into the terminal.</p>
+          <pre>pip install wyse<br>pip install &lt;package&gt;</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-0">
+        <div class="block">
+          <h2>Secure your software and keep your CISO happy</h2>
+          <p>Hey Pythonistas, ever felt the chill of a potential cybersecurity breach slithering through your code? We get it! CISOs are out here, flexing their security muscles against modern threats and navigating through the wild jungle of ever-evolving cybersecurity regulations. And let’s be real, none of us want our names in the headlines unless it’s for creating something epically cool. That’s where Perfsec slithers in; securing your Python software supply chain with its sturdy design to ensure you meet those complex regulatory requirements. We ease the task of releasing vulnerability-free software, so your Python products can bask safely in the warm sun of a breach-free environment, and you enjoy the good press and peaceful developer slumbers.</p>
+        </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-Wy2PQNq2_HulgRHYkSGcFzZuH3F3rYJBab8quCmp0ZIZcg/viewform?usp=sf_link" class="btn btn-cta">Join our beta!</a>
+      </div>
       <div class="col-md-5 col-sm-12">
         <div class="block">
-          <img src="img/wrapper-img.png" alt="Img">
+          <img src="img/happy-office.jpg" alt="Img">
         </div>
       </div><!-- .col-md-5 close -->
     </div>
   </div>
 </section>
 
-<section id="feature">
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-6">
-      <h2>WE BELIEVE IN GREAT IDEAS</h2>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <a href="#" class="btn btn-view-works">View Works</a>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Service Start -->
-<section id="service">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2>Our Services</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="icon ion-coffee"></i>
-          <h4>Branding</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-compass"></i>
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-image"></i>
-          <h4>App Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-bug"></i>
-          <h4>Start Up</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-headphone"></i>
-          <h4>Logo Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-leaf"></i>
-          <h4>Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-planet"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-earth"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- Call to action Start -->
 <section id="call-to-action">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+          <h2>We safeguard your Python supply chain</h2>
+          <p>Get to know perfsec, our solution to provide secure, vetted Python dependencies, generate your SBOMs and share your experience with us!</p>
+          <a class="btn btn-default btn-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc-Wy2PQNq2_HulgRHYkSGcFzZuH3F3rYJBab8quCmp0ZIZcg/viewform?usp=sf_link" >Join our beta!</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Content Start -->
-<section id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        <h2>Fun Facts About Us</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        {% if site.data.funfacts.size > 0 %}
-        <div class="block">
-          {% for ff in site.data.funfacts %}
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="{{ ff.icon }}"></i>
-                <h4 class="counter">{{ ff.counter }}</h4>
-                <span>{{ ff.text }}</span>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
-      <div class="col-md-6">
-        {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
-                <img src="img/cotation.png" alt="IMG">
-                <p>{{ tm.testimonial }}</p>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
-                </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% endif %}
       </div>
     </div>
   </div>
